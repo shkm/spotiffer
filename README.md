@@ -15,8 +15,6 @@ Once it's more complete I'll add it to the Firefox extension site.
 1. Browse to an album on Bandcamp
 2. Click the Spotiffer button
 
-Currently the cookie expires after an hour, at which point this will stop working. To fix shortly.
-
 ## Development
 
 Use [web-ext](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/Getting_started_with_web-ext) and run `cd src && web-ext run`.
@@ -34,7 +32,6 @@ Now just run `./package.sh`, which will zip and sign the extension, and you'll g
 
 ## TODO
 
-- Handle cookie expiry
 - Make it work for artist pages
 - Don't enable on non-artist, non-album pages
 - Open current track in Spotify if playing

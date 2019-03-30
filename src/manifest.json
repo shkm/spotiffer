@@ -3,7 +3,7 @@
   "author": "Jamie Schembri",
   "homepage_url": "https://github.com/shkm/spotiffer",
   "name": "Spotiffer",
-  "version": "0.1.4",
+  "version": "0.1.6",
   "description": "Opens music in Spotify.",
   "icons": {
     "48": "icon.svg",

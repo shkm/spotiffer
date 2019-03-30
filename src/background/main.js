@@ -66,7 +66,9 @@ function handleLoadedScript(sender) {
 
 function handleDataReceived(sender, payload) {
   getCookie()
-    .then((cookie) => search(cookie, payload.artist, payload.albumTitle))
+    .then((cookie) => {
+      return search(cookie, payload.artist, payload.albumTitle)
+    })
     .then((uri) => openSpotify(convertUriToOpenSpotifyUri(uri)))
 
   // TODO: close tab when loaded

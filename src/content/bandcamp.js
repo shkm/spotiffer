@@ -25,5 +25,9 @@ function albumPayload() {
 }
 
 function artistPayload() {
-  return null // TODO
+  const rawPayload = window.wrappedJSObject.BandData
+
+  if (!rawPayload) return
+
+  return { artist: rawPayload.name }
 }

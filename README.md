@@ -12,11 +12,10 @@ Once it's more complete I'll add it to the Firefox extension site.
 
 ## Usage
 
-1. Browse to [Spotify Web Player](https://open.spotify.com)
-2. Browse to an album on Bandcamp
-3. Click the Spotiffer button
+1. Browse to an album on Bandcamp
+2. Click the Spotiffer button
 
-Currently you'll have to revisit the Spotify web player every hour. To be fixed shortly.
+Currently the cookie expires after an hour, at which point this will stop working. To fix shortly.
 
 ## Development
 
@@ -35,7 +34,7 @@ Now just run `./package.sh`, which will zip and sign the extension, and you'll g
 
 ## TODO
 
-- Currently we require that the user goes to the Spotify Web Player to set a cookie. We should be able to get this automatically.
+- Handle cookie expiry
 - Make it work for artist pages
 - Don't enable on non-artist, non-album pages
 - Open current track in Spotify if playing

@@ -6,7 +6,7 @@ Currently only working with Bandcamp, but others may be added later.
 
 ## Installation
 
-[Download the latest xpi](https://github.com/shkm/spotiffer/tree/master/releases/) and [follow these instructions](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/Distribution_options/Sideloading_add-ons#Using_Install_Add-on_From_File).
+Install from [Firefox Addons](https://addons.mozilla.org/en-GB/firefox/addon/spotiffer/).  Alternatively, [Download the latest xpi](https://github.com/shkm/spotiffer/tree/master/releases/) and [follow these instructions](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/Distribution_options/Sideloading_add-ons#Using_Install_Add-on_From_File).
 
 Once it's more complete I'll add it to the Firefox extension site.
 

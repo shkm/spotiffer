@@ -32,7 +32,6 @@ Now just run `./package.sh`, which will zip and sign the extension, and you'll g
 
 ## TODO
 
-- Don't enable on non-artist, non-album pages
 - Open current track in Spotify if playing
 - Gracefully handle no search results
 - More providers

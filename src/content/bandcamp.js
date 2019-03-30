@@ -1,5 +1,5 @@
 // window.wrappedJsObject.EmbedData
-window.addEventListener("load", notifyExtension)
+window.addEventListener("load", maybeNotifyExtension)
 
 browser.runtime.onMessage.addListener((message) => {
   if (message.event !== "GET_DATA_FOR_SPOTIFY") return
@@ -7,13 +7,21 @@ browser.runtime.onMessage.addListener((message) => {
   getDataForSpotify()
 })
 
-function notifyExtension() {
+function maybeNotifyExtension() {
+  if (!getPayload()) return // can't do anything with this page
+
   browser.runtime.sendMessage({ event: "LOADED" })
 }
 
+function getPayload() {
+  return albumPayload() || artistPayload()
+}
+
 function getDataForSpotify() {
-  browser.runtime.sendMessage({ event: "GOT_DATA_FOR_SPOTIFY",
-                                payload: albumPayload() || artistPayload() })
+  browser.runtime.sendMessage({
+    event: "GOT_DATA_FOR_SPOTIFY",
+    payload: getPayload() }
+  )
 }
 
 function albumPayload() {
